@@ -1,1 +1,1 @@
-recursive-include st_btn_select/frontend/build *
+recursive-include st_row_buttons/frontend/build *

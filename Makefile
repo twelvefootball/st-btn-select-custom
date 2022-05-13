@@ -6,7 +6,7 @@
 ##############################
 # User Settings
 ##############################
-component = st_btn_select
+component = st_row_buttons
 frontend = ${component}/frontend
 testfile = demo/test.py
 

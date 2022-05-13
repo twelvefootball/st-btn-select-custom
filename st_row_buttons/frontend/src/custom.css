@@ -16,15 +16,17 @@
 
 /* BASE BUTTON */
 button {
-  font-weight: 400;
-  border-radius: 0.25rem;
+  border-radius: 10px;
   margin: 0 0.4rem;
   line-height: 1.5;
   padding: 0.25rem 0.75rem;
-  color: var(--text-color);
+  color: #838383;
   user-select: none;
   border-width: 1px;
   border-style: solid;
+  font-style: "Montserrat", san-serif;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 /* NAV BUTTON */
@@ -35,8 +37,8 @@ nav button {
 
 /* LIGHT THEME */
 button.light {
-  background-color: white;
-  border-color: rgba(49, 51, 63, 0.2);
+  background-color: #F8F8F8;
+  border-color: #E8E8E8;
 }
 
 /* DARK THEME */
@@ -47,13 +49,15 @@ button.dark {
 
 /* BUTTON STATES */
 button:hover {
-  color: var(--primary-color);
-  border-color: var(--primary-color);
+  color: white;
+  border-color: #EB70B1;
+  background-color: #EB70B1;
 }
 
 button:focus:not(:active) {
-  color: var(--primary-color);
-  border-color: var(--primary-color);
+  color: white;
+  border-color: #EB70B1;
+  background-color: #EB70B1;
 }
 
 button:focus {
@@ -61,14 +65,16 @@ button:focus {
 }
 
 button:active {
-  color: white !important;
-  background-color: var(--primary-color);
-  color: var(--primary-color);
+  color: white;
+  border-color: #EB70B1;
+  background-color: #EB70B1;
   outline: none;
 }
 
 button:disabled {
-  color: var(--primary-color);
-  border-color: var(--primary-color);
+  color: white;
+  border-color: #EB70B1;
+  background-color: #EB70B1;
   cursor: pointer;
+  font-weight: 600;
 }

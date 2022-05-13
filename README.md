@@ -20,26 +20,28 @@ Sometimes you want a user to make a selection, but you only have a few options.
 Using an `st.selectbox` component works, but wouldn't it be easier to simply have a few buttons in a row ?  
 Well, this custom component allows just that !
 
-
 # Installation
-```bash
-pip install st_btn_select
-```
 
+```bash
+pip install st_row_buttons
+```
 
 # Getting Started
-Creating a Button Selection is really easy.
-```python
-from st_btn_select import st_btn_select
 
-selection = st_btn_select(('option 1', 'option 2', 'option 3'))
+Creating a Button Selection is really easy.
+
+```python
+from st_row_buttons import st_row_buttons
+
+selection = st_row_buttons(('option 1', 'option 2', 'option 3'))
 ```
 
-You can also use this component as a small top navigation bar.  
-```python
-from st_btn_select import st_btn_select
+You can also use this component as a small top navigation bar.
 
-page = st_btn_select(
+```python
+from st_row_buttons import st_row_buttons
+
+page = st_row_buttons(
   # The different pages
   ('home', 'about', 'docs', 'playground'),
   # Enable navbar
@@ -55,21 +57,19 @@ if page == 'home':
 
 > **NOTE**  
 > There can only be one navbar per page, as they will be displayed on top of each other.
-> 
+>
 > The navbar buttons do not set any URL hashes, and thus the different pages are not bookmarkable, nor can you use the browser history.
 
-
 ## Documentation
+
 Check out this streamlit app for the documentation, as well as a demo.  
-[![Open in Streamlit][share-badge]][share-url] 
+[![Open in Streamlit][share-badge]][share-url]
 
-
-
-[version-badge]: https://img.shields.io/pypi/v/st_btn_select?label=version
+[version-badge]: https://img.shields.io/pypi/v/st_row_buttons?label=version
 [version-url]: https://github.com/0phoff/st-btn-select/releases
-
-[license-badge]: https://img.shields.io/pypi/l/st_btn_select
+[license-badge]: https://img.shields.io/pypi/l/st_row_buttons
 [license-url]: https://github.com/0phoff/st-btn-select/blob/master/LICENSE.md
-
 [share-badge]: https://static.streamlit.io/badges/streamlit_badge_black_white.svg
 [share-url]: https://share.streamlit.io/0phoff/st-btn-select/demo/test.py
+
+pypi-AgEIcHlwaS5vcmcCJGE1ZDc3MWY2LWZiZjMtNDM1Yy04YzMxLTAwZjQwNThlNjIwZgACJXsicGVybWlzc2lvbnMiOiAidXNlciIsICJ2ZXJzaW9uIjogMX0AAAYgr88ILL5mY-1H0rgPN5UjLUTt8ggY2ODParisMq71Bnc

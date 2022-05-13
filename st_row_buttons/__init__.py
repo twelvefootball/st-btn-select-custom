@@ -2,33 +2,33 @@ import os
 import streamlit as st
 import streamlit.components.v1 as components
 
-__all__ = ['st_btn_select']
+__all__ = ['st_row_buttons']
 __RELEASE = True
 
 
 if not __RELEASE:
     _btn_select = components.declare_component(
-        "btn_select",
+        "st_row_buttons",
         url="http://localhost:3001",
     )
 
     _btn_select_nav = components.declare_component(
-        "btn_select_nav",
+        "st_row_buttons_nav",
         url="http://localhost:3001",
     )
 else:
     _btn_select = components.declare_component(
-        "btn_select",
+        "st_row_buttons",
         path=os.path.join(os.path.dirname(os.path.abspath(__file__)), "frontend/build"),
     )
 
     _btn_select_nav = components.declare_component(
-        "btn_select_nav",
+        "st_row_buttons_nav",
         path=os.path.join(os.path.dirname(os.path.abspath(__file__)), "frontend/build"),
     )
 
-def st_btn_select(options, index=0, format_func=str, nav=False, key=None):
-    """Create a new instance of "st_btn_select".
+def st_row_buttons(options, index=0, format_func=str, nav=False, key=None):
+    """Create a new instance of "st_row_buttons".
 
     Parameters
     ----------
@@ -58,7 +58,7 @@ def st_btn_select(options, index=0, format_func=str, nav=False, key=None):
 
     Warning
     -------
-    You can only have one `st_btn_select` as navigation, as others will be displayed on top of it.
+    You can only have one `st_row_buttons` as navigation, as others will be displayed on top of it.
     """
     key = st.type_util.to_key(key)
     opt = st.type_util.ensure_indexable(options)
@@ -67,7 +67,7 @@ def st_btn_select(options, index=0, format_func=str, nav=False, key=None):
         st.markdown(
             """
                 <style>
-                iframe[title="st_btn_select.btn_select_nav"] {
+                iframe[title="st_row_buttons.btn_select_nav"] {
                     position: fixed;
                     top: 0;
                     z-index: 1;
