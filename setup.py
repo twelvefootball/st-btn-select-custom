@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="st_row_buttons",
-    version="0.0.4",
+    version="0.0.5",
     author="kubix",
     description="Streamlit Button Selection Component",
     long_description=open('README.md').read(),
