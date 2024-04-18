@@ -50,14 +50,14 @@ button.dark {
 /* BUTTON STATES */
 button:hover {
   color: white;
-  border-color: #EB70B1;
-  background-color: #EB70B1;
+  border-color: #FA4B01;
+  background-color: #FA4B01;
 }
 
 button:focus:not(:active) {
   color: white;
-  border-color: #EB70B1;
-  background-color: #EB70B1;
+  border-color: #FA4B01;
+  background-color: #FA4B01;
 }
 
 button:focus {
@@ -66,15 +66,15 @@ button:focus {
 
 button:active {
   color: white;
-  border-color: #EB70B1;
-  background-color: #EB70B1;
+  border-color: #FA4B01;
+  background-color: #FA4B01;
   outline: none;
 }
 
 button:disabled {
   color: white;
-  border-color: #EB70B1;
-  background-color: #EB70B1;
+  border-color: #FA4B01;
+  background-color: #FA4B01;
   cursor: pointer;
   font-weight: 600;
 }
